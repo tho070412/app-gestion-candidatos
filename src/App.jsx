@@ -1,15 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
-
+import { Link } from 'react-router-dom'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <body class="bg-[#f6f6f8] dark:bg-[#101522] text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
-
       <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 lg:px-10 py-4 bg-white dark:bg-slate-900 sticky top-0 z-50">
         <div class="flex items-center gap-3 text-[#1142d4]">
           <div class="size-6">
@@ -27,10 +21,10 @@ function App() {
         </nav>
 
         <div class="flex items-center gap-4">
-          <a href="/login" class="hidden md:block text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-[#1142d4] transition-colors">Log In</a>
-          <a href="/register" class="bg-[#1142d4] hover:bg-[#1142d4]/90 text-white text-sm font-semibold py-2 px-5 rounded-[0.125rem] transition-colors">
+          <Link to="/login" class="hidden md:block text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-[#1142d4] transition-colors">Log In</Link>
+          <Link to="/register" class="bg-[#1142d4] hover:bg-[#1142d4]/90 text-white text-sm font-semibold py-2 px-5 rounded-[0.125rem] transition-colors">
             Get Started
-          </a>
+          </Link>
         </div>
       </header>
 
