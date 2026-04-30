@@ -17,6 +17,7 @@ function Login() {
         fetchUsers()
     }, [])
 
+    
     function findUser() {
         let auth = users.some((item) => email == item.email && password == item.password)
         if (auth) {
